@@ -8,7 +8,7 @@ const CarteleraInformativa = () => {
         <div className="grid grid-cols-2 gap-4">
             <div className="col-span-2 md:col-span-1 p-4 text-center flex flex-col justify-center items-center">
                 <h1 className="mb-4 text-xl text-center  font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white  ">
-                    Cartelera informative: 24-28 de febrero
+                    Cartelera Informativa Desde el 24 al 28 de febrero
                 </h1>
                 El día viernes la comisión de servicios públicos de la cámara Municipal de Buchivacoa en una mesa de trabajo con las diferentes Direcciones Ejecutiva de la Alcaldía Municipal tratando puntos álgidos relacionados  a las aguas Negras, recolección de basura, tocamos los puntos sobre el puerto de Zazarida, problemática existente en la urbanización el Milenio referente aguas blancas,aguas negras a las quejas de los motorizados que molestan a los vecinos y otros aspectos referente a los servicios públicos estuvieron presentes Concejales Antonio Acurero, Luis piña, los Directores y coordinadores Municipales ing Emmanuel Noris,Lic Will Dupont, Tito Palencia,Daniel Toyo, Alex cuartt ,Américo cuenca
             </div>
