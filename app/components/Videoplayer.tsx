@@ -1,7 +1,4 @@
 import React from 'react';
-interface VideoplayerProps {
-    videoSrc: string;
-}
 
 const Videoplayer = () => {
     return (
