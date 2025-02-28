@@ -1,6 +1,9 @@
-import Image from "next/image";
 import WelcomeComponent from "./components/WelcomeComponent";
 import AdoptaArbol from "./components/AdoptaArbol";
+import Directiva from "./components/Directiva";
+import Videoplayer from "./components/Videoplayer";
+import CarteleraInformativa from "./components/CarteleraInformativa";
+import SomosBuchivacoa from "./components/SomosBuchivacoa";
 
 export default function Home() {
   return (
@@ -8,6 +11,10 @@ export default function Home() {
 
       <WelcomeComponent/>
       <AdoptaArbol/>
+      <Directiva/>
+      <Videoplayer/>
+      <CarteleraInformativa/>
+      <SomosBuchivacoa/>
     </div>
   );
 }

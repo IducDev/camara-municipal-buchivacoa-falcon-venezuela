@@ -9,7 +9,7 @@ const WelcomeComponent = () => {
 
       <div className="grid grid-cols-2 gap-4 ">
         <div className="col-span-2 md:col-span-1 p-4">
-            <h1 className="mb-10 text-4xl text-center md:text-start font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white border-b-4 border-green-500 w-min">
+            <h1 className="mb-10 text-4xl text-center md:text-start font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-7xl dark:text-white border-b-4 border-green-500 w-min">
               Bienvenidos
             </h1>
             
