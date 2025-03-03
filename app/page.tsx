@@ -14,7 +14,7 @@ export default function Home() {
       <Directiva/>
       <Videoplayer/>
       <CarteleraInformativa/>
-      <SomosBuchivacoa/>
+      
     </div>
   );
 }
