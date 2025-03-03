@@ -3,7 +3,6 @@ import AdoptaArbol from "./components/AdoptaArbol";
 import Directiva from "./components/Directiva";
 import Videoplayer from "./components/Videoplayer";
 import CarteleraInformativa from "./components/CarteleraInformativa";
-import SomosBuchivacoa from "./components/SomosBuchivacoa";
 
 export default function Home() {
   return (

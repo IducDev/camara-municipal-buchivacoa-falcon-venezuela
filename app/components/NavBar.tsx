@@ -10,7 +10,7 @@ export function NavBar() {
 
   const pathname = usePathname();
   return (
-    <Navbar fluid rounded className="border-b-2 border-primaryBlue bg-white dark:bg-primaryBlue dark:border-primaryBlue fixed top-0 left-0 right-0">
+    <Navbar fluid rounded className="border-b-2 border-primaryBlue bg-white dark:bg-primaryBlue dark:border-primaryBlue fixed top-0 left-0 right-0 z-50">
                 <Navbar.Brand as={Link} href="/">
                   <Image  src={flag} width={60} height={60} alt="Camara municipal Logo" className="mr-4" />
                   <span className="self-center  text-xs font-semibold text-pureBlack">
