@@ -12,8 +12,10 @@ import docente from "@/public/docente-venezuela.png";
 import gmail from "@/public/gmail.png";
 
 // Definición de tipos
+import { StaticImageData } from 'next/image';
+
 interface ComisionProps {
-  imagen: any;
+  imagen: StaticImageData;
   titulo: string;
   presidente: string;
   vicepresidente: string;
