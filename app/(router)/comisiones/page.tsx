@@ -10,6 +10,11 @@ import proteccionCivil from "@/public/proteccion-covil.png";
 import servicioPublico from "@/public/servicio-publico.jpg";
 import docente from "@/public/docente-venezuela.png";
 import gmail from "@/public/gmail.png";
+import miramar from "@/public/miramar.jpg";
+import ejidos from "@/public/EJIDOS.png";
+import finanzas from "@/public/finanzas-presupuestos.jpg";
+import vialidad from "@/public/vialidad.jpg";
+import apreton from "@/public/apreton-manos.jpg";
 
 // Definición de tipos
 import { StaticImageData } from 'next/image';
@@ -98,7 +103,53 @@ const comisiones = [
     miembro: "CARLOS FERRER",
     descripcion: "Se encarga de todo lo relacionado a las Actividades Recreativas, Culturales y de Educación dentro del Municipio.",
     correo: "brendalouc8@gmail.com"
-  }
+  },
+  {
+    imagen: miramar,
+    titulo: "Agricultura, Ambiente y Turismo.",
+    presidente: "LEOBALDO CALLEJA",
+    vicepresidente: "BRENDA CUEVAS",
+    miembro: "RAFAEL ACOSTA",
+    descripcion: "Se encarga de atender temas relacionados con la Agricultura, el Ambiente y el Turismo.",
+    correo: "lcalleja30@gmail.com"
+  },
+  {
+    imagen: ejidos,
+    presidente: "CARLOS FERRER",
+    titulo: "Ejidos y Urbanismo.",
+    vicepresidente: "ANTONIO ACURERO",
+    miembro: "CRUZ ALVAREZ",
+    descripcion: "Esta Comisión está relacionada directamente con la Inspección de Tierras Rural, Urbana e Industrial, trabajando en conjunto con la Oficina de Catastro para su posterior asignación.",
+    correo: "carlosjferrers@gmail.com"
+  },
+  {
+    imagen: finanzas,
+    presidente: "LEOBALDO CALLEJA",
+    titulo: "Presupuesto, Finanzas y Contraloría.",
+    vicepresidente: "CARLOS FERRER",
+    miembro: "LUIS PIÑA",
+    descripcion: "Tendrá a su Cargo la Vigilancia de Inversión de Fondos Públicos, y a su vez el Control de las Operaciones de la Administración Pública Municipal.",
+    correo: "lcalleja30@gmail.com"
+  },
+  {
+    imagen: vialidad,
+    presidente: "CRUZ ALVAREZ",
+    titulo: "Vialidad e Infraestructura.",
+    vicepresidente: "BRENDA CUEVAS",
+    miembro: "CARLOS FERRER",
+    descripcion: "Su función es Vigilar el buen Funcionamiento de la Vialidad y de libre Tránsito en el Municipio, Pasos Peatonales, Puentes, Pavimento y Señalizaciones, los cuales son Fundamentales para el  Desarrollo Económico y Movilidad Humana dentro del Municipio.",
+    correo: "tawalachon@gmail.com"
+  },
+  {
+    imagen: apreton,
+    presidente: "LUIS PIÑA",
+    titulo: "Relaciones Interinstitucionales.",
+    vicepresidente: "ANTONIO ACURERO",
+    miembro: "RAFAEL ACOSTA",
+    descripcion: "Tiene como base Mantener Relaciones tanto con el Sector Público y con el Sector Privado en Pro del Beneficio y Crecimiento Económico de este Municipio.",
+    correo: "pinaluisfelipe21@gmail.com"
+  },
+
 ];
 
 // Componente principal de la página
@@ -106,10 +157,15 @@ const page: React.FC = () => {
   return (
     <>
       <NavBar />
-      <main className="w-full h-auto py-10 pb-20 px-4 bg-white dark:bg-gray-800 mt-20">
-        <h1 className="text-6xl mb-6 font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
-          ESTAMOS PARA TI
-        </h1>
+      <main className="w-full h-auto pb-10 px-4 bg-white dark:bg-gray-800 ">
+        <div style={{backgroundImage: `url()`,}}>
+          <h1 className="flex justify-center items-center text-6xl h-screen mb-6 font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
+            <p className="text-2xl md:text-4xl lg:text-6xl font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
+              ESTAMOS PARA TI
+            </p>
+          </h1>
+        </div>
+        
         
         <p className="text-2xl text-gray-600 dark:text-gray-300 text-center">
           ESTAS SON LAS COMISIONES QUE TE PERMITIRÁN CANALIZAR TU INQUIETUD
