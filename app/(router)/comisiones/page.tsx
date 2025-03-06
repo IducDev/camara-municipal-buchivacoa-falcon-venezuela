@@ -15,6 +15,7 @@ import ejidos from "@/public/EJIDOS.png";
 import finanzas from "@/public/finanzas-presupuestos.jpg";
 import vialidad from "@/public/vialidad.jpg";
 import apreton from "@/public/apreton-manos.jpg";
+import salaSesiones from "@/public/saladesesiones.jpeg";
 
 // Definición de tipos
 import { StaticImageData } from 'next/image';
@@ -158,17 +159,15 @@ const page: React.FC = () => {
   return (
     <>
       <NavBar />
-      <main className="w-full h-auto pb-10 px-4 bg-white dark:bg-gray-800 ">
-        <div style={{backgroundImage: `url()`,}}>
-          <h1 className="flex justify-center items-center text-6xl h-screen mb-6 font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
+      <div className="w-full h-screen bg-cover bg-no-repeat bg-center" style={{backgroundImage: `url(${salaSesiones.src})`}}>
+        <h1 className="flex justify-center items-center text-6xl h-screen mb-6 font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
             <p className="text-2xl md:text-4xl lg:text-6xl font-bold text-gray-800 dark:text-white text-center underline decoration-green-500 decoration-4 underline-offset-8">
               ESTAMOS PARA TI
             </p>
-          </h1>
-        </div>
-        
-        
-        <p className="text-2xl text-gray-600 dark:text-gray-300 text-center">
+        </h1>
+      </div>
+      <main className="w-full h-auto pb-10 px-4 bg-white dark:bg-gray-800 ">
+        <p className="text-2xl text-gray-600 dark:text-gray-300 text-center my-8">
           ESTAS SON LAS COMISIONES QUE TE PERMITIRÁN CANALIZAR TU INQUIETUD
         </p>
         
