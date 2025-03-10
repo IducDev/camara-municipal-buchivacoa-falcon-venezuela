@@ -30,7 +30,7 @@ const AdoptaArbol = () => {
                     </small>
                 </p>
                 <div className=''>
-                    <Link href="/" className={"text-white mx-auto bg-primaryBlue hover:bg-primaryBlue focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-primaryBlue dark:hover:primaryBlue focus:outline-none dark:focus:primaryBlue"}>
+                    <Link href="/alcaldia" className={"text-white mx-auto bg-primaryBlue hover:bg-primaryBlue focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-primaryBlue dark:hover:primaryBlue focus:outline-none dark:focus:primaryBlue"}>
                         Enterate
                     </Link>
                 </div>
