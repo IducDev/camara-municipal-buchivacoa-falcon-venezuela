@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { Play, Volume2, VolumeX, Maximize } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "flowbite-react"
 
 interface VideoPlayerProps {
   streamUrl: string
@@ -47,16 +47,16 @@ export default function TikTokVideoPlayer({ streamUrl }: VideoPlayerProps) {
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20" onClick={togglePlay}>
+            <Button color="gray" size="icon" className="text-white hover:bg-white/20" onClick={togglePlay}>
               <Play className="h-5 w-5" />
             </Button>
 
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20" onClick={toggleMute}>
+            <Button color="gray" size="icon" className="text-white hover:bg-white/20" onClick={toggleMute}>
               {isMutedRef.current ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
             </Button>
           </div>
 
-          <Button variant="ghost" size="icon" className="text-white hover:bg-white/20" onClick={toggleFullscreen}>
+          <Button color="gray" size="icon" className="text-white hover:bg-white/20" onClick={toggleFullscreen}>
             <Maximize className="h-5 w-5" />
           </Button>
         </div>
