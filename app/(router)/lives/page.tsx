@@ -1,22 +1,28 @@
-import Footer from "@/app/components/Footer";
-import { NavBar } from "@/app/components/NavBar";
-import TikTokIframeEmbed from "@/app/components/tiktok-iframe-embed";
 
-export default function page() {
-  const tikTokUsername = "camarabuchivacoa" // Official TikTok account as an example
+"use client"
+import { useState, useEffect } from "react"
+import { LiveIndicator } from "@/app/components/LivesIndicator"
+import Footer from '@/app/components/Footer'
+import { NavBar } from '@/app/components/NavBar'
+import React from 'react';
+import { YouTubeEmbed } from "@/app/components/YoutubeEmbed"
+import { isLiveNow } from "@/app/lib/Schedule"
 
-  return (
-    <>
-        <NavBar/>
-        <main className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6">TikTok Live Stream</h1>
-        <div className="max-w-3xl mx-auto">
-            <TikTokIframeEmbed username={tikTokUsername} />
-        </div>
-        </main>
-        <Footer/>
-    </>
-    
-  )
-}
+const Page = () => {
+    const [isLive, setIsLive] = useState(false)
+    const videoId = "ogfYd705cRs" // Reemplaza con tu ID de video de YouTube
+    // Comprobar si estamos en vivo según el horario
+    useEffect(() => {
+      const checkLiveStatus = () => {
+        setIsLive(isLiveNow())
+      }
+  
+      // Comprobar inmediatamente
+      checkLiveStatus();
+  
+      // Comprobar cada minuto
+      const interval = setInterval(checkLiveStatus, 60000)
+  
+      return () => clearInterval(interval)
+    }, [])
 
