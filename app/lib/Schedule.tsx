@@ -1,7 +1,7 @@
 // Horario de transmisiones (puedes modificar estos valores)
 const schedule = [
-    { day: 2, startHour: 8, startMinute: 0, endHour: 23, endMinute: 0 },
-    { day: 4, startHour: 8, startMinute: 0, endHour: 23, endMinute: 0 }, 
+    { day: 2, startHour: 8, startMinute: 0, endHour: 14, endMinute: 0 },
+    { day: 4, startHour: 8, startMinute: 0, endHour: 14, endMinute: 0 }, 
   ]
   
   export function isLiveNow(): boolean {

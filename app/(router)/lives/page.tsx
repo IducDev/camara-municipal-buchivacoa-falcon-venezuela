@@ -60,8 +60,25 @@ const Page = () => {
                         </ul>
                     </div>
                     </div>
+
+                    <h2 className="text-3xl my-6">Historial de transmisiones</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    {/* Ejemplo de un video pasado */}
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden col-span-1">
+                        <YouTubeEmbed videoId={"mYwK4CpBVZU"} />
+                    </div>
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden col-span-1">
+                        <YouTubeEmbed videoId={"-yOJ0gU5bpQ"} />
+                    </div>
+                    
                 </div>
-                </main>
+
+                </div>
+                
+            
+            
+            </main>
         <Footer/>
     </>
   )
