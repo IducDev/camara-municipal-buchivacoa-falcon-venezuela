@@ -8,7 +8,7 @@ import React from 'react';
 import { YouTubeEmbed } from "@/app/components/YoutubeEmbed"
 import { isLiveNow } from "@/app/lib/Schedule"
 
-const page = () => {
+const Page = () => {
 
     const [isLive, setIsLive] = useState(false)
     const videoId = "ogfYd705cRs" // Reemplaza con tu ID de video de YouTube
@@ -77,4 +77,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;
