@@ -24,9 +24,17 @@ export default function TikTokLiveEmbed({ username }: TikTokLiveEmbedProps) {
       setIsLoading(false)
 
       // Force TikTok to scan for new embeds
-      if (window.TikTok && typeof window.TikTok.scan === "function") {
+      interface TikTokWindow extends Window {
+        TikTok?: {
+          scan: () => void;
+        };
+      }
+
+      const tiktokWindow: TikTokWindow = window;
+
+      if (tiktokWindow.TikTok && tiktokWindow.TikTok.scan()) {
         setTimeout(() => {
-          window.TikTok.scan()
+          tiktokWindow.TikTok!.scan()
         }, 100)
       }
     }
