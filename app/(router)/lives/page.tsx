@@ -9,7 +9,7 @@ import { YouTubeEmbed } from "@/app/components/YoutubeEmbed";
 import { isLiveNow } from "@/app/lib/Schedule";
 const Page = () => {
     const [isLive, setIsLive] = useState(false)
-    const videoId = "ogfYd705cRs" // Reemplaza con tu ID de video de YouTube
+    const videoId = "mYwK4CpBVZU" // Reemplaza con tu ID de video de YouTube
     // Comprobar si estamos en vivo según el horario
     useEffect(() => {
       const checkLiveStatus = () => {
@@ -55,9 +55,8 @@ const Page = () => {
                     <div className="p-4 bg-gray-50">
                         <h3 className="font-medium mb-2">Horario de transmisiones:</h3>
                         <ul className="space-y-1 text-sm">
-                        <li>• Lunes: 18:00 - 19:00</li>
-                        <li>• Miércoles: 20:00 - 21:30</li>
-                        <li>• Viernes: 17:00 - 18:30</li>
+                        <li>• Martes: 10:00 - 12:00</li>
+                        <li>• Jueves: 10:00 - 12:00</li>
                         </ul>
                     </div>
                     </div>

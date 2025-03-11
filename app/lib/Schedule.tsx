@@ -1,8 +1,7 @@
 // Horario de transmisiones (puedes modificar estos valores)
 const schedule = [
-    { day: 1, startHour: 18, startMinute: 0, endHour: 19, endMinute: 0 }, // Lunes 18:00-19:00
-    { day: 3, startHour: 20, startMinute: 0, endHour: 21, endMinute: 30 }, // Miércoles 20:00-21:30
-    { day: 5, startHour: 17, startMinute: 0, endHour: 18, endMinute: 30 }, // Viernes 17:00-18:30
+    { day: 2, startHour: 8, startMinute: 0, endHour: 23, endMinute: 0 },
+    { day: 4, startHour: 8, startMinute: 0, endHour: 23, endMinute: 0 }, 
   ]
   
   export function isLiveNow(): boolean {
