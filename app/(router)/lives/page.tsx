@@ -4,9 +4,8 @@ import { LiveIndicator } from "@/app/components/LivesIndicator"
 import Footer from '@/app/components/Footer'
 import { NavBar } from '@/app/components/NavBar'
 import React from 'react';
-import { YouTubeEmbed } from "@/app/components/YoutubeEmbed"
-import { isLiveNow } from "@/app/lib/Schedule"
-
+import { YouTubeEmbed } from "@/app/components/YoutubeEmbed";
+import { isLiveNow } from "@/app/lib/Schedule";
 const Page = () => {
     const [isLive, setIsLive] = useState(false)
     const videoId = "ogfYd705cRs" // Reemplaza con tu ID de video de YouTube
@@ -35,13 +34,11 @@ const Page = () => {
             <main className="min-h-screen bg-gray-100 p-4 md:p-8">
                 <div className="max-w-5xl mx-auto">
                     <h1 className="text-3xl font-bold mb-6">Nuestra Transmisión en Vivo</h1>
-
                     <div className="bg-white rounded-lg shadow-md overflow-hidden">
                     <div className="p-4 border-b flex justify-between items-center">
                         <h2 className="text-xl font-semibold">Transmisión De sesiones</h2>
                         <LiveIndicator isLive={isLive} />
                     </div>
-
                     <div className="aspect-video w-full">
                         {isLive ? (
                         <YouTubeEmbed videoId={videoId} />
@@ -54,7 +51,6 @@ const Page = () => {
                         </div>
                         )}
                     </div>
-
                     <div className="p-4 bg-gray-50">
                         <h3 className="font-medium mb-2">Horario de transmisiones:</h3>
                         <ul className="space-y-1 text-sm">
@@ -67,7 +63,6 @@ const Page = () => {
                 </div>
                 </main>
         <Footer/>
-    
     </>
   )
 }
