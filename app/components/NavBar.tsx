@@ -35,6 +35,11 @@ export function NavBar() {
                       Alcaldia
                     </Link>
 
+
+                    <Link href="/lives" className={pathname === "/lives" ? "text-white bg-primaryBlue hover:bg-primaryBlue focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-primaryBlue dark:hover:primaryBlue focus:outline-none dark:focus:primaryBlue" : "text-pureBlack font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2  dark:hover:primaryBlue focus:outline-none dark:focus:primaryBlue"}>
+                      Sesiones En vivo
+                    </Link>
+
                     <Link href="https://drive.google.com/drive/folders/1kzKM_GX8aSNqXbFDorv2hkGhFxgHamS8" target="_blank" className="focus:outline-none text-black bg-secondaryYellow hover:bg-yellow-500 focus:ring-4 focus:ring-secondaryYellow font-bold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">
                       Ordenanzas 
                     </Link>
