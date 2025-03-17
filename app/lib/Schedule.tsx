@@ -1,10 +1,9 @@
 // Horario de transmisiones (puedes modificar estos valores)
-const schedule = [
-    { day: 2, startHour: 8, startMinute: 0, endHour: 14, endMinute: 0 },
-    { day: 4, startHour: 8, startMinute: 0, endHour: 14, endMinute: 0 }, 
-  ]
+
+
+const schedule = [{ day: 2, startHour: 10, startMinute: 0, endHour: 12, endMinute: 0 },];
   
-  export function isLiveNow(): boolean {
+export function isLiveNow(): boolean {
     const now = new Date()
     const currentDay = now.getDay() // 0 = Domingo, 1 = Lunes, etc.
     const currentHour = now.getHours()
