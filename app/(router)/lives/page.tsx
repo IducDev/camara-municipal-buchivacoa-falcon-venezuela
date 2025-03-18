@@ -67,6 +67,9 @@ const Page = () => {
 
                     {/* Ejemplo de un video pasado */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden col-span-1">
+                        <YouTubeEmbed videoId={"AhRyZT1KqaA"} />
+                    </div>
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden col-span-1">
                         <YouTubeEmbed videoId={"mYwK4CpBVZU"} />
                     </div>
                     <div className="bg-white rounded-lg shadow-md overflow-hidden col-span-1">
