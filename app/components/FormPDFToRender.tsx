@@ -117,6 +117,11 @@ const FormPDFToRender = ({ datos = {
             </View>
 
             <View style={styles.section}>
+              <Text style={styles.label}>CORREO DEL DENUNCIANTE:</Text>
+              <Text style={styles.text}>{datos.correo}</Text>
+            </View>
+
+            <View style={styles.section}>
               <Text style={styles.label}>DESCRIPCIÓN DE LA DENUNCIA:</Text>
               <Text style={styles.text}>
                 {datos.descripcion}

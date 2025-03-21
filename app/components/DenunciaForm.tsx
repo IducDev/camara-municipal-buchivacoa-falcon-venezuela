@@ -20,6 +20,7 @@ export default function DenunciaForm({ datos = {
     telefono: '0412-1234567',
     descripcion: 'Por medio de la presente, me dirijo a ustedes para denunciar la situación que se presenta en la Calle Las Flores del Sector La Esperanza, donde existe un bote de aguas residuales que afecta a toda la comunidad desde hace aproximadamente 2 semanas.\n\nEsta situación está generando problemas de salubridad y malos olores que afectan a todos los vecinos del sector.',
     fecha: '15 de Marzo de 2024',
+    correo: "email@example.com",
 } }: { datos?: DenunciaData }) {
     const denunciaRef = useRef<HTMLDivElement>(null);
 
