@@ -1,8 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import DenunciaForm from './DenunciaForm';
-import FormPDFToRender from './FormPDFToRender';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 
 const FormOAC = () => {
   const [formData, setFormData] = useState({
@@ -167,34 +165,10 @@ const FormOAC = () => {
         </button>
       </form>
     </div>
-            </>
+        </>
 
         ) : ( <>
-        
             <DenunciaForm datos={formData} />
-            <div style={{ padding: 20 }}>
-              <h1>Generar PDF con React PDF en Next.js</h1>
-              <PDFDownloadLink
-                document={<FormPDFToRender/>}
-                fileName="denuncia-aoc.pdf"
-                style={{
-                  padding: 10,
-                  backgroundColor: '#0070f3',
-                  color: '#fff',
-                  borderRadius: 5,
-                  textDecoration: 'none',
-                }}
-              >
-                {({ loading }) => (loading ? 'Generando PDF...' : 'Descargar PDF')}
-              </PDFDownloadLink>
-            </div>
-            <div style={{ padding: 20 }}>
-              <h1>Ver PDF en el navegador</h1>
-              <PDFViewer width="100%" height="600px">
-                <FormPDFToRender/>
-              </PDFViewer>
-            </div>
-        
         </>)}
      
     
