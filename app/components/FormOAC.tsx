@@ -165,12 +165,10 @@ const FormOAC = () => {
         </button>
       </form>
     </div>
-            </>
+        </>
 
         ) : ( <>
-        
             <DenunciaForm datos={formData} />
-        
         </>)}
      
     
