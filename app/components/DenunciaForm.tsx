@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react';
+import React from 'react';
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 import FormPDFToRender from './FormPDFToRender';
 
@@ -22,9 +22,7 @@ export default function DenunciaForm({ datos = {
     fecha: '15 de Marzo de 2024',
     correo: "email@example.com",
 } }: { datos?: DenunciaData }) {
-    const denunciaRef = useRef<HTMLDivElement>(null);
 
-    
     return (
         <>
         <div style={{ padding: 20 }}>
